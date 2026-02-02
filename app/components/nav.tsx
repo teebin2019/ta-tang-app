@@ -53,7 +53,7 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="#"
+                href="/contact"
                 className="block py-2 px-3 text-white font-semibold hover:text-orange-100 transition-colors"
               >
                 ติดต่อ

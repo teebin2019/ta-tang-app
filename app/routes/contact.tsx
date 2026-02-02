@@ -1,5 +1,5 @@
-import { Food } from "~/foods/food";
 import type { Route } from "./+types/home";
+import { Contact } from "~/contact/contact";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -7,10 +7,10 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function FoodPage() {
+export default function ContactPage() {
   return (
     <>
-      <Food />
+      <Contact />
     </>
   );
 }
