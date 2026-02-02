@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { News } from "~/news/news";
+import { About } from "~/about/about";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -8,10 +8,10 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function newApp() {
+export default function AboutPage() {
   return (
     <>
-      <News />
+      <About />
     </>
   );
 }

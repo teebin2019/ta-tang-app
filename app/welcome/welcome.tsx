@@ -1,8 +1,9 @@
-import imgSru from "./suratani.jpg";
+import Footer from "~/components/footer";
 import food1 from "./food1.jpg";
 import food2 from "./food2.jpg";
 import food3 from "./food3.jpg";
 import food4 from "./food4.jpg";
+import Nav from "~/components/nav";
 
 export function Welcome() {
   const foods = [
@@ -37,72 +38,9 @@ export function Welcome() {
 
   return (
     <>
-      <nav className="bg-gradient-to-r from-orange-500 to-red-500 shadow-lg">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" className="flex items-center space-x-3">
-            <span className="text-3xl">🍜</span>
-            <span className="self-center text-2xl font-bold text-white drop-shadow-lg">
-              อาหารท่าฉาง
-            </span>
-          </a>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg md:hidden hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300"
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 17 14">
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div className="hidden w-full md:block md:w-auto">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-white font-semibold hover:text-orange-100 transition-colors"
-                >
-                  หน้าแรก
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-white font-semibold hover:text-orange-100 transition-colors"
-                >
-                  เกี่ยวกับ
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-white font-semibold hover:text-orange-100 transition-colors"
-                >
-                  อาหาร
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-white font-semibold hover:text-orange-100 transition-colors"
-                >
-                  ติดต่อ
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+      <Nav />
       <div className="max-w-screen-xl mx-auto p-6">
         {/* Hero Section */}
-
         <div className="mb-8">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251949.8822036393!2d98.77870084084647!3d9.358299867189068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3056bc13a13800c5%3A0x30223bc2c368140!2z4Lit4Liz4LmA4Lig4Lit4LiX4LmI4Liy4LiJ4Liy4LiHIOC4quC4uOC4o-C4suC4qeC4juC4o-C5jOC4mOC4suC4meC4tQ!5e0!3m2!1sth!2sth!4v1770021561242!5m2!1sth!2sth"
@@ -178,13 +116,7 @@ export function Welcome() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white mt-12 py-6">
-        <div className="max-w-screen-xl mx-auto text-center">
-          <p className="text-gray-300">
-            © 2024 อาหารท่าฉาง - สัมผัสรสชาติแท้ของภาคใต้
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
